@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<form method='post'>
+  Search Query:<br>
+  <input type="text" name="query" value="">
+  <br>
+  Search List:<br>
+  <input type="text" name="list" value="">
+  <br>
+  Delimiter:<br>
+  <input type="text" name="delimiter" value="">
+  <br><br>
+  <input type="submit" value="Submit">
+</form> 
+
+{{ result|tojson|safe }}<p>Returns your fuzzy match.</p>
+
+</body>
+</html>
